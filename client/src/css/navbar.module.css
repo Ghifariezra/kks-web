@@ -1,0 +1,29 @@
+.rowNavbarCustomize {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.customOutlineDark {
+  --bs-btn-hover-bg: #0061ff;
+  --bs-btn-hover-border-color: #0061ff;
+  --bs-btn-active-bg: #0061ff;
+  /* --bs-btn-border-color: #0061FF; */
+}
+.btnPaddingCustom {
+  --bs-btn-font-family: "Inter", sans-serif;
+  --bs-btn-font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-padding-y: 0.750rem;
+  --bs-btn-border-radius: 1.250rem;
+}
+
+@media (max-width: 768px) {
+  .rowNavbarCustomize{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
