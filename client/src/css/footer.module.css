@@ -1,0 +1,7 @@
+.btnFooter {
+    --bs-btn-font-family: "Inter", sans-serif;
+    --bs-btn-font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    --bs-btn-padding-x: clamp(1rem, 3vw, 1.500rem);
+    --bs-btn-padding-y: clamp(0.5rem, 2vw, 1rem);
+    --bs-btn-border-radius: 1.250rem;
+}
