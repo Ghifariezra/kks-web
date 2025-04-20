@@ -9,7 +9,7 @@ import backgroundFooter from "../../assets/footer/bg-footer.png";
 
 function FooterComponent() {
   return (
-    <Container className="bg-footer mt-0 mb-0" style={{ backgroundImage: `url(${backgroundFooter})`, backgroundSize: "cover", padding: "20px 0" }} fluid>
+    <Container className="bg-footer mt-0 mb-0" style={{ backgroundImage: `url(${backgroundFooter})`, backgroundSize: "cover", padding: "20px 0", overflowX: "hidden" }} fluid>
       {/* 2nd Row */}
       <Row className="py-5 px-5">
         {/* 1st Row */}
