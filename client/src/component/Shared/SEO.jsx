@@ -15,7 +15,7 @@ function SEO() {
                 <meta property="og:description" content="Deskripsi OG" />
                 <meta property="og:image" content="https://contoh.com/image.jpg" />
                 <meta property="og:url" content="https://contoh.com" /> */}
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href={FavIcon} />
             </Helmet>
         </>
     )
