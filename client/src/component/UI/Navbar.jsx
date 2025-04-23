@@ -8,7 +8,6 @@ import Button from "react-bootstrap/Button";
 import Collapse from "react-bootstrap/Collapse";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import heroLogo from "../../assets/logo/hero-logo.png";
 import customizeNavbarComponent from "../../css/navbar.module.css";
 import useSubmitSchedule, { sendMessage } from "../../hooks/useSubmitSchedule.jsx";
 
@@ -85,7 +84,7 @@ function NavbarComponent() {
     <Container className="py-3">
       <Row className={`align-items-center ${customizeNavbarComponent.rowNavbarCustomize}`}>
         <Col xs={6} md={3}>
-          <Image src={heroLogo} alt="Logo" fluid />
+          <Image src="/assets/logo/hero-logo.png" alt="Logo" fluid />
         </Col>
 
         <Col xs={6} md={9} className="d-flex justify-content-end">
