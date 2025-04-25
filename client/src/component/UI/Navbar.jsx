@@ -41,11 +41,11 @@ function NavbarComponent() {
 
   const toggleMenu = () => setOpen(!open);
   const handleShowModal = () => {
-    // console.log("Open Modal");
+    console.log("Open Modal");
     setShowModal(true);
   };
   const handleCloseModal = () => {
-    // console.log("Close Modal");
+    console.log("Close Modal");
     setShowModal(false);
   };
 

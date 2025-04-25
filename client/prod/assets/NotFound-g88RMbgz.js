@@ -1,1 +1,0 @@
-import{j as t}from"./index-VKNy-vms.js";function n(){return t.jsxs("div",{className:"text-center mt-5",children:[t.jsx("h1",{children:"404"}),t.jsx("p",{children:"Halaman tidak ditemukan 😢"})]})}export{n as default};
