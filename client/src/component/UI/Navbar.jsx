@@ -84,12 +84,12 @@ function NavbarComponent() {
     <Container className="py-3">
       <Row className={`align-items-center ${customizeNavbarComponent.rowNavbarCustomize}`}>
         <Col xs={6} md={3}>
-          <Image src="/assets/logo/hero-logo.png" alt="Logo" fluid />
+          <Image src="/assets/logo/hero-logo.webp" alt="Logo" width="199.47px" height="54px" fluid />
         </Col>
 
         <Col xs={6} md={9} className="d-flex justify-content-end">
           {isMobile && (
-            <Button variant="outline-dark" onClick={toggleMenu} aria-controls="navbar-collapse" aria-expanded={open} className={customizeNavbarComponent.customOutlineDark}>
+            <Button variant="outline-dark" onClick={toggleMenu} aria-controls="navbar-collapse" aria-expanded={open} className={customizeNavbarComponent.customOutlineDark} aria-label="Toggle navigation menu">
               <i className="bi bi-list"></i>
             </Button>
           )}

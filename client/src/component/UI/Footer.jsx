@@ -8,19 +8,26 @@ import customizeFooterComponent from "../../css/footer.module.css";
 
 function FooterComponent() {
   return (
-    <Container className="bg-footer mt-0 mb-0" style={{ backgroundImage: `url(/assets/footer/bg-footer.png)`, backgroundSize: "cover", padding: "20px 0", overflowX: "hidden" }} fluid>
+    <Container className="bg-footer position-relative p-0" style={{ overflow: "hidden" }} fluid>
+      <img
+        src="/assets/footer/bg-footer.webp"
+        alt="Footer Background"
+        className="position-absolute top-0 start-0 w-100 h-100"
+        style={{ objectFit: "cover", zIndex: -1 }}
+        fetchpriority="high"
+      />
       {/* 2nd Row */}
       <Row className="py-5 px-5">
         {/* 1st Row */}
         <Row style={{ paddingBottom: "45px" }}>
-          <h5 className="fw-bold" style={{ color: "white" }}>
+          <h5 role="heading" aria-level="2" className="fw-bold" style={{ color: "white" }}>
             PT KAPITA KONSUL SINERGI
           </h5>
         </Row>
         <Row className="gap-5">
           <Col>
             <Row style={{ paddingBottom: "21px" }}>
-              <h4 className="fw-bold" style={{ color: "white" }}>
+              <h4 role="heading" aria-level="3" className="fw-bold" style={{ color: "white" }}>
                 Siap Berkolaborasi Untuk <br />
                 Solusi Terbaik Bersama Kami?
               </h4>
@@ -54,7 +61,7 @@ function FooterComponent() {
               </h5>
             </Row> */}
             <Stack gap={3}>
-              <h5 className="fw-semibold" style={{ color: "white" }}>
+              <h5 role="heading" aria-level="4" className="fw-semibold" style={{ color: "white" }}>
                 Kontak Kami
               </h5>
               <a href="#" className="text-decoration-none">
